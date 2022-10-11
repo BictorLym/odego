@@ -123,11 +123,10 @@ p {
 }
 
 .search__control{
-  font-size: small;
+  z-index: 1;
   color: var(--color-dark-gray);
   padding: 6px 12px;
   border-radius: 40px;
-  border-color: var(--color-white);
   border: 1px solid var(--color-dark-white);
   height: 100%;
   width: 100%;
@@ -152,4 +151,10 @@ p {
 .slide__container{
   display: flex;
   justify-content: center;
+}
+
+.nerf{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
 }
