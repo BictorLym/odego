@@ -122,9 +122,8 @@ p {
 
 .search__container{
   display: flex;
-  text-align: center;
   height: 40px;
-  width: 400px;
+  width: 105%;
   position: relative;
   border-radius: 40px;
   border: 1px solid var(--color-dark-white);
@@ -148,7 +147,7 @@ p {
   height: 100%;
 }
 
-#text__search__btn{
+.text__search__btn, .img__search__btn{
   display: inline-block;
   font-size: small;
   color: var(--color-blue);
@@ -156,11 +155,46 @@ p {
   padding: 6px 8px;
   
 }
-/*slide*/
 
+.search_box {
+  display: none;
+  position: absolute;
+  width: 100px;
+  padding: 8px;
+  left: 195px;
+  top: 55px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: #333;
+  color: #fff;
+  font-size: 14px;
+}
+
+.search_box:after {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border: solid transparent;
+  border-color: rgba(51, 51, 51, 0);
+  border-bottom-color: #333;
+  border-width: 10px;
+  pointer-events: none;
+  content: ' ';
+}
+
+.img__search__btn:hover + .search_box {
+  display: block;
+}
+
+/*slide*/
 .slide__container{
   display: flex;
   justify-content: center;
+  padding-top: 18px;
 }
 
 .slidesize{
@@ -180,6 +214,7 @@ p {
   width:100%;
   height:100vh;
 }*/
+
 #map_navbar{
   width: 100%;
   display: flex;
@@ -191,15 +226,17 @@ p {
 #map__container{
   padding: 20px;
 }
+
 #map{
   width: 100%;
   height: 700px;
-  
 }
+
 .back__icon {
   font-size: 24px;
   color: var(--color-black);
 }
+
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   :root {
