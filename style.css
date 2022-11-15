@@ -5,7 +5,7 @@
   --color-light-white: #eeeeee;
   --color-dark-white: #c3c3c3;
   --color-dark-gray: #7f7f7f;
-  --color-blue: #0D6EFD;
+  --color-blue: #87BDE9;
   --color-navy: #001e8d;
   --color-black: #000000;
 
@@ -107,10 +107,32 @@ p {
   padding-bottom: 20px;
   text-align: center;
 }
+.home__nameo{
+  color: #B4BDCB;
+  display: inline;
+}
+.home__named{
+  color: #C9A3A4;
+  display: inline;
+}
+.home__namee{
+  color:#ACB5AC;
+  display: inline;
+}
+.home__nameg{
+  color: #A7CEEF;
+  display: inline;
+}
+.home__nameo2{
+  color: #AB8755;
+  display: inline;
+}
+
 
 .map__btn{
   width: 50px;
   height: 50px;
+  fill: var(--color-blue);
 }
 
 
@@ -149,15 +171,17 @@ p {
 
 .text__search__btn, .img__search__btn{
   display: inline-block;
-  font-size: small;
-  color: var(--color-blue);
-  background-color: var(--color-white);
+  fill: var(--color-blue);
   padding: 6px 8px;
+  width: 40px;
+  height: 100%;
 }
 
 .search__box{
   font-size:14px;
   color: #666;
+  margin-top: 10px;
+  margin-left:10px;
 }
 
 /*slide*/
